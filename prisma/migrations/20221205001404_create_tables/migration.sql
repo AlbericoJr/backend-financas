@@ -20,4 +20,5 @@ CREATE TABLE "receives" (
     "updated_at" DATETIME DEFAULT CURRENT_TIMESTAMP,
     "user_id" TEXT NOT NULL,
     CONSTRAINT "receives_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "users" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
+    
 );
